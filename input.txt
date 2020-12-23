@@ -1,0 +1,45 @@
+nil ashkan(num a,list A){
+    list b;
+    b = makelist(5);
+    # this is comment
+    if (a == 0){
+        num testScope;
+    }
+    for (i in b){
+        return i;
+    }
+    return i;
+    return b;
+}
+
+num sum3(num a, num b, num c){
+    num sum;
+    sum = a + b + c;
+    return sum;
+}
+
+num vecsum(list A){
+    num sum;
+    sum = 0;
+    for (a in A) {
+    sum = sum + a;
+    }
+    return sum;
+}
+
+num main(){
+    list A;
+    A = makelist(4);
+    A[0] = numread();
+    A[1] = numread();
+    A[2] = numread();
+    A[3] = numread();
+    numprint(vecsum(A));
+    return 0;
+}
+
+num fib(num n){
+    if (n < 2)
+    return 1;
+    return fib(n - 1) + fib(n - 2);
+}
